@@ -1,15 +1,16 @@
 # CMax
 Our implementation of contrast maximization for EBV
 
-## Install and usage
-Installation
+## Installation and Usage
+- Install
 ```
-git clone 
+git clone git@github.com:yongleex/cmax.git
 cd cmax
-pip install .
+# conda activate your_python_env
+pip install .  
 ```
 
-Usage
+- Usage
 ```
 from cmax.config import config
 from cmax.ebiv import EBIV
@@ -24,6 +25,6 @@ vecs = ebiv.compute(events) # M*4 for x,y,vx,vy
 ```
 
 Example
-[Test.ipynb]()
+- [Test.ipynb](https://github.com/yongleex/cmax/blob/main/tests/Test.ipynb)
 
 
