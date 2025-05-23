@@ -21,6 +21,7 @@ class EstimatorCMax(EstimatorABC):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
     def compute(self, evts, v0=None):
+        print(len(evts))
         evts = torch.tensor(evts).to(self.device)
         v0 = torch.tensor([[0.0, 0.0]],device=self.device, requires_grad=True) 
         

@@ -5,4 +5,4 @@ description = "Our Imple of EBIV with PyTorch"
 dependencies = [
     "numpy>=1.0",
     "requests",
-]
+].
